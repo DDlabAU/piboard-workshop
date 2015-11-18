@@ -9,7 +9,7 @@ Der udvikles rigtig meget på Processing 3 til Raspberry Pi 2 for tiden, så dis
 
 På ældre MacBook computere kan der være issues med at forberede et SD kort med den indbyggede kortlæser. Brug en ekstern kortlæser for at løse problemet.
 
-Standard brugernavn på Raspberri Pi er 'pi' og standard kodeord er 'raspberry'
+Standard brugernavn på Raspberry Pi er 'pi' og standard kodeord er 'raspberry'
 
 **De mest relevante links**
 - [Processings hjemmeside](https://processing.org)
@@ -40,7 +40,7 @@ fra et terminalvindue for at installere Processing, som beskrevet i [Wikien](htt
 Når du har forberedt dit SD kort sætter du det i Raspberry Pi'en, tilslutter skærm, mus og tastatur, netværkskabel og derefter strøm, hvorefter computeren booter. Nu skal der laves diverse justeringer til styresystemet.
 - Udvid filsystemet
 - Sæt tastatur til dansk
-	- Køre sudo raspi-config fra en kommandolinje
+	- Køre ```sudo raspi-config``` fra en kommandolinje
 		- Vælg Internationalisation Options
 		- Vælg Change Keyboard Layout
 		- Vælg Generic 105-key (intl) PC
@@ -49,7 +49,7 @@ Når du har forberedt dit SD kort sætter du det i Raspberry Pi'en, tilslutter s
 		- Vælg No compose key
 		- No (Control+alt+Backspace)
 		- Finish
-- Kør sudo reboot fra en kommandolinje
+- Kør ```sudo reboot``` fra en kommandolinje
 
 ### Opdatering af Linux
 Når computeren har genstartet skal Linux opdateret. Det gøres på følgende måde:
@@ -57,7 +57,7 @@ Når computeren har genstartet skal Linux opdateret. Det gøres på følgende m�
 - Kør ```sudo apt-get upgrade``` fra en kommandolinje
 
 ### Test Processing
-Nu er din Raspberry opdateret og det er tid til at teste at alt fungere indtil videre. Åbn Processing
+Nu er din Raspberry opdateret og det er tid til at teste at alt fungere indtil videre. Åbn Processing og åbn File -> Examples -> Image -> Transparency og kør det.
 
 ### Installering af Arduinomiljøet
 - Kør ```sudo apt-get install arduino``` fra en kommandolinje
@@ -69,3 +69,4 @@ Nu er din Raspberry opdateret og det er tid til at teste at alt fungere indtil v
 - Nederst i den sketch står Arduinokoden. Kopiér den over i en Arduino sketch og upload den.
 - Lav kredsløb med følgende opsætning: To stk. 10k potmetre sat til 5V, hhv. A0 og A1, og ground (se det øverste billede [her](https://www.arduino.cc/en/Tutorial/Potentiometer)).
 - Luk Arduinomiljøet og start sketchen i Processing. Du skulle nu kunne styre den lille bold
+- Du skal muligvis resette Arduinoen med din Processing sketch åben for at få det til at fungere.
