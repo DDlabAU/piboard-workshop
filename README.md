@@ -63,7 +63,9 @@ Nu er din Raspberry opdateret og det er tid til at teste at alt fungere indtil v
 - Kør ```sudo apt-get install arduino```fra en kommandolinje
 - Start Arduino-miljøet
 - Test at Arduinomiljøet virker ved at uploade en sketch på normal vis
-- Find din Arduino ved at liste de serielle forbindelser på kommandolinjen: ```koden her```
 
 ###Test forbindelsen mellem Processing og Arduino
-- 
+- I Processing, åbn File -> Examples -> Libraries -> Serial -> SerialCallResponse eksemplet.
+- Nederst i den sketch står Arduinokoden. Kopiér den over i en Arduino sketch og upload den.
+- Lav kredsløb med følgende opsætning: To stk. 10k potmetre sat til 5V, hhv. A0 og A1, og ground (se det øverste billede [her](https://www.arduino.cc/en/Tutorial/Potentiometer)).
+- Luk Arduinomiljøet og start sketchen i Processing. Du skulle nu kunne styre den lille bold
