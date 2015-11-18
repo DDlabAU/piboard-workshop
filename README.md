@@ -12,14 +12,16 @@ Der udvikles rigtig meget på Processing 3 til Raspberry Pi 2 for tiden, så dis
 - [Arduinos hjemmeside](https://www.arduino.cc)
 - [Processings Wiki om Processing på Raspberry Pi](https://github.com/processing/processing/wiki/Raspberry-Pi)
 - [Hardware, Integration & Other Languages forummet på processing.org. Det er primært dette forum der bruges til at spørge/svare på spørgsmål om Raspberry Pi og Processing](https://forum.processing.org/two/categories/hardware-other-languages)
-- 
 
-**Procedure for at få lavet et SD kort med styresystem + Processing 3 til Raspberry Pi 2**
+**Lav et SD-kort med styresystem + Processing 3 til Raspberry Pi 2**
 
+**Mulighed 1:** Hent et Raspbian-image med Processing 3.0.1 pre-installeret.
 - [Raspbian-image med Processing 3.0.1 pre-installeret](http://download.processing.org/processing-3.0.1-linux-raspbian.zip)
-- [Downloadsiden på raspberrypi.org](https://www.raspberrypi.org/downloads/)
 
-Styresystemet på Raspberry Pi ligger på et SD kort, som man 'forbereder' på sin PC inden man booter første gang. Her linker jeg til steder hvor I kan se hvordan man forbereder styresystemet.
+Dette er umiddelbart den letteste måde at få Processing til at køre på sin Raspberry Pi 2 og den vi anbefaler.
 
+**Mulighed 2:** Hent et Raspbian-image uden Processing (eller installér Processing på en Raspberry Pi du har arbejdet med i forvejen)**
 
-Det nemmeste er at hente et 'image' af Raspbian, der er det (Debian baserede) Linuxstyresystem der er det mest populære. Man kan hente en version hvor Processing allerede er installeret, eller installere det selv efterfølgende.
+Følg vejledninegen for NOOBS eller RASPBIAN på [downloadsiden på raspberrypi.org](https://www.raspberrypi.org/downloads/). NOOBS er Raspberry Pi's 'lette' installer og RASPBIAN er et image.
+
+Når du har downloadet dit image med eller uden Processing pre-installeret, så følger du vejledningen for dit styresystem [her](https://www.raspberrypi.org/documentation/installation/installing-images/README.md). Hvis du har valgt NOOBS er vejledningen [her](https://www.raspberrypi.org/documentation/installation/noobs.md).
