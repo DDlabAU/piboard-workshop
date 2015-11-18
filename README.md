@@ -53,14 +53,14 @@ Når du har forberedt dit SD kort sætter du det i Raspberry Pi'en, tilslutter s
 
 ### Opdatering af Linux
 Når computeren har genstartet skal Linux opdateret. Det gøres på følgende måde:
-- Kør sudo apt-get update fra en kommandolinje
-- Kør sudo apt-get upgrade fra en kommandolinje 
+- Kør ```sudo apt-get update``` fra en kommandolinje
+- Kør ```sudo apt-get upgrade``` fra en kommandolinje
 
 ### Test Processing
 Nu er din Raspberry opdateret og det er tid til at teste at alt fungere indtil videre. Åbn Processing
 
 ### Installering af Arduinomiljøet
-- Kør ```sudo apt-get install arduino```fra en kommandolinje
+- Kør ```sudo apt-get install arduino``` fra en kommandolinje
 - Start Arduino-miljøet
 - Test at Arduinomiljøet virker ved at uploade en sketch på normal vis
 
